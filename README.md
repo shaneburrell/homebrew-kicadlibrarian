@@ -1,16 +1,13 @@
 # Homebrew-kicadlibrarian
 
-Under Development!!!
+Under Development but working!!!
 
 ## Installation
 
-Installation is simple and much like any other tap, but please read the next section carefully first.  There are certain options you may wish to enable or disable.  Once you're sure, go head and:
+Installation is simple and much like any other tap, but please read the next section carefully first.
 ```sh
 brew tap shaneburrell/kicadlibrarian
-brew install -vd kicadlibrarian
+brew install --HEAD kicadlibrarian
 
-You will need to "ignore" some of the errors.  
+Run from terminal by issueding kicadlibrarian command. 
 ```
-
-
-NOTE: This will have to be run interactively at the moment and some error ignored!
