@@ -14,7 +14,7 @@ class Kicadlibrarian < Formula
   depends_on "curl"
   depends_on "libharu"
 
-  patch :DATA
+
 
   def install
     args = %W[
@@ -47,20 +47,3 @@ class Kicadlibrarian < Formula
     system "false"
   end
 end
-__END__
-diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
-index 4e6a76f..250b88b 100644
---- a/src/CMakeLists.txt
-+++ b/src/CMakeLists.txt
-@@ -100,9 +100,9 @@ SET(DEB_DESKTOP_DIR     "/usr/share/applications")
- SET(DEB_MIME_DIR        "/usr/share/mime/packages")
- SET(DEB_PIXMAPS_DIR     "/usr/share/pixmaps")
-
--INSTALL(FILES ${CMAKE_BINARY_DIR}/kicadlibrarian.desktop DESTINATION ${DEB_DESKTOP_DIR})
--INSTALL(FILES ${CMAKE_BINARY_DIR}/kicadlibrarian.xml DESTINATION ${DEB_MIME_DIR})
--INSTALL(FILES ${CMAKE_BINARY_DIR}/kicadlibrarian32.png DESTINATION ${DEB_PIXMAPS_DIR})
-+#INSTALL(FILES ${CMAKE_BINARY_DIR}/kicadlibrarian.desktop DESTINATION ${DEB_DESKTOP_DIR})
-+#INSTALL(FILES ${CMAKE_BINARY_DIR}/kicadlibrarian.xml DESTINATION ${DEB_MIME_DIR})
-+#INSTALL(FILES ${CMAKE_BINARY_DIR}/kicadlibrarian32.png DESTINATION ${DEB_PIXMAPS_DIR})
-
- ##### Packaging instructions
