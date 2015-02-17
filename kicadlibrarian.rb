@@ -14,7 +14,10 @@ class Kicadlibrarian < Formula
   depends_on "curl"
   depends_on "libharu"
 
-
+  patch do
+      url "https://gist.githubusercontent.com/shaneburrell/0334092796388091a2b1/raw/3477164e0d741eb1a88e3207bef066314d90600d/kicadlibrcmake.patch"
+      sha1 "deadbeefdeadbeefdeadbeefdeadbeefdeadbeef"
+  end
 
   def install
     args = %W[
