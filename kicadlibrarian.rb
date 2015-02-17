@@ -14,8 +14,10 @@ class Kicadlibrarian < Formula
   depends_on "curl"
   depends_on "libharu"
 
-  patch :DATA
-  
+  patch do
+    url "https://gist.githubusercontent.com/shaneburrell/9c6885c038c3dd3d1e80/raw/0d6cb889e4ab78048f873d9e171b9360d24479a4/gistfile1.txt"
+    sha1 "deadbeefdeadbeefdeadbeefdeadbeefdeadbeef"
+  end
   def install
     args = %W[
             -DCMAKE_C_COMPILER=/usr/bin/clang
@@ -47,23 +49,3 @@ class Kicadlibrarian < Formula
     system "false"
   end
 end
-__END__
-diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
-index 4e6a76f..c681163 100644
---- a/src/CMakeLists.txt
-+++ b/src/CMakeLists.txt
-@@ -96,14 +96,6 @@ INSTALL(FILES ${TPL_FILES}
-         DESTINATION ${CMAKE_INSTALL_PREFIX}/template
-         COMPONENT templates)
-
--SET(DEB_DESKTOP_DIR     "/usr/share/applications")
--SET(DEB_MIME_DIR        "/usr/share/mime/packages")
--SET(DEB_PIXMAPS_DIR     "/usr/share/pixmaps")
--
--INSTALL(FILES ${CMAKE_BINARY_DIR}/kicadlibrarian.desktop DESTINATION ${DEB_DESKTOP_DIR})
--INSTALL(FILES ${CMAKE_BINARY_DIR}/kicadlibrarian.xml DESTINATION ${DEB_MIME_DIR})
--INSTALL(FILES ${CMAKE_BINARY_DIR}/kicadlibrarian32.png DESTINATION ${DEB_PIXMAPS_DIR})
--
- ##### Packaging instructions
-
- SET(CPACK_GENERATOR DEB)
