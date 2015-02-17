@@ -14,10 +14,6 @@ class Kicadlibrarian < Formula
   depends_on "curl"
   depends_on "libharu"
 
-  def patches
-    p = {:p0 => [ DATA ]}
-
-  end
   def install
     args = %W[
             -DCMAKE_C_COMPILER=/usr/bin/clang
@@ -49,20 +45,3 @@ class Kicadlibrarian < Formula
     system "false"
   end
 end
-__END__
-diff -rupN old/CMakeLists.txt src/CMakeLists.txt
---- old/CMakeLists.txt	2015-02-17 11:25:50.000000000 -0500
-+++ src/CMakeLists.txt	2015-02-17 11:26:27.000000000 -0500
-@@ -96,13 +96,6 @@ INSTALL(FILES ${TPL_FILES}
-         DESTINATION ${CMAKE_INSTALL_PREFIX}/template
-         COMPONENT templates)
-
--SET(DEB_DESKTOP_DIR     "/usr/share/applications")
--SET(DEB_MIME_DIR        "/usr/share/mime/packages")
--SET(DEB_PIXMAPS_DIR     "/usr/share/pixmaps")
--
--INSTALL(FILES ${CMAKE_BINARY_DIR}/kicadlibrarian.desktop DESTINATION ${DEB_DESKTOP_DIR})
--INSTALL(FILES ${CMAKE_BINARY_DIR}/kicadlibrarian.xml DESTINATION ${DEB_MIME_DIR})
--INSTALL(FILES ${CMAKE_BINARY_DIR}/kicadlibrarian32.png DESTINATION ${DEB_PIXMAPS_DIR})
-
- ##### Packaging instructions
