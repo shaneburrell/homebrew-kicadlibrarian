@@ -3,17 +3,13 @@
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Kicadlibrarian < Formula
   homepage "http://www.compuphase.com/electronics/kicadlibranrian_en.htm"
-  url "http://www.compuphase.com/software/kicadlibrarian-sources-0.9.5167.tar.gz"
-  version "0.9.5167"
-  sha1 "e774da07a069090b2212dbb3fdb0606acc39c8ce"
+  head "https://github.com/mxcl/lastfm-cocoa.git"
 
   depends_on "cmake" => :build
   depends_on :x11 # if your formula requires any X11/XQuartz components
   depends_on "wxkicad"
   depends_on "curl"
   depends_on "libharu"
-
-  patch :DATA
 
   def install
     args = %W[
@@ -47,21 +43,3 @@ class Kicadlibrarian < Formula
   end
 end
 __END__
-diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
-index 4e6a76f..39e94fc 100644
---- a/src/CMakeLists.txt
-+++ b/src/CMakeLists.txt
-@@ -99,11 +99,11 @@ INSTALL(FILES ${TPL_FILES}
- SET(DEB_DESKTOP_DIR     "/usr/share/applications")
- SET(DEB_MIME_DIR        "/usr/share/mime/packages")
- SET(DEB_PIXMAPS_DIR     "/usr/share/pixmaps")
--
-+IF(NOT APPLE)
- INSTALL(FILES ${CMAKE_BINARY_DIR}/kicadlibrarian.desktop DESTINATION ${DEB_DESKTOP_DIR})
- INSTALL(FILES ${CMAKE_BINARY_DIR}/kicadlibrarian.xml DESTINATION ${DEB_MIME_DIR})
- INSTALL(FILES ${CMAKE_BINARY_DIR}/kicadlibrarian32.png DESTINATION ${DEB_PIXMAPS_DIR})
--
-+ENDIF
- ##### Packaging instructions
- 
- SET(CPACK_GENERATOR DEB)
