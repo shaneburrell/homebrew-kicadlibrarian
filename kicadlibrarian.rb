@@ -14,10 +14,7 @@ class Kicadlibrarian < Formula
   depends_on "curl"
   depends_on "libharu"
 
-  patch do
-    url "https://gist.githubusercontent.com/shaneburrell/9c6885c038c3dd3d1e80/raw/0d6cb889e4ab78048f873d9e171b9360d24479a4/gistfile1.txt"
-    sha1 "73b9b79d4cc5f71f2ac24dfe1c0a6669c2ddeedd"
-  end
+  
   def install
     args = %W[
             -DCMAKE_C_COMPILER=/usr/bin/clang
