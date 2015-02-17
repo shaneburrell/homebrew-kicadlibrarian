@@ -16,7 +16,7 @@ class Kicadlibrarian < Formula
 
   patch do
       url "https://gist.github.com/shaneburrell/0334092796388091a2b1/download"
-      sha1 "f277129581cd84aa96650826f854f169ca2e1aef"
+      sha1 "c205bd3ebe460b2811663f1acd53794e5deb94d1"
   end
 
   def install
