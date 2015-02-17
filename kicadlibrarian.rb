@@ -46,6 +46,7 @@ class Kicadlibrarian < Formula
     # executables being tested: `system "#{bin}/program", "do", "something"`.
     system "false"
   end
+end
 __END__
 diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
 index 4e6a76f..39e94fc 100644
