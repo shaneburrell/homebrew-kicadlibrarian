@@ -16,7 +16,7 @@ class Kicadlibrarian < Formula
 
   patch :p1 do
       url "https://gist.githubusercontent.com/shaneburrell/6e9f75e682791c6c23ea/raw/3477164e0d741eb1a88e3207bef066314d90600d/CMAKE.diff"
-      sha1 "f277129581cd84aa96650826f854f169ca2e1aef"
+      sha1 "2ca6f1d34fb87f75d8765d27629ef1e02606d945"
   end
 
   def install
