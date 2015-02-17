@@ -1,7 +1,6 @@
 # Documentation: https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Formula-Cookbook.md
 #                /usr/local/Library/Contributions/example-formula.rb
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-
 class Kicadlibrarian < Formula
   homepage "http://www.compuphase.com/electronics/kicadlibranrian_en.htm"
   url "http://www.compuphase.com/software/kicadlibrarian-sources-0.9.5167.tar.gz"
@@ -66,4 +65,3 @@ index 4e6a76f..39e94fc 100644
  ##### Packaging instructions
  
  SET(CPACK_GENERATOR DEB)
-
