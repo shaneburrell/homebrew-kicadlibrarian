@@ -15,7 +15,7 @@ class Kicadlibrarian < Formula
   depends_on "libharu"
 
   patch do
-      url "https://gist.githubusercontent.com/shaneburrell/0334092796388091a2b1/raw/3477164e0d741eb1a88e3207bef066314d90600d/kicadlibrcmake.patch"
+      url "https://gist.github.com/shaneburrell/0334092796388091a2b1/download"
       sha1 "2ca6f1d34fb87f75d8765d27629ef1e02606d945"
   end
 
