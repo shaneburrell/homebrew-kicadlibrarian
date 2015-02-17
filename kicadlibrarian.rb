@@ -3,7 +3,7 @@
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Kicadlibrarian < Formula
   homepage "http://www.compuphase.com/electronics/kicadlibranrian_en.htm"
-  head "https://github.com/mxcl/lastfm-cocoa.git"
+  head "https://github.com/shaneburrell/kicadlibr-osx.git"
 
   depends_on "cmake" => :build
   depends_on :x11 # if your formula requires any X11/XQuartz components
