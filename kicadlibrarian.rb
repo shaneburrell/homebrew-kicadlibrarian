@@ -6,7 +6,7 @@ class Kicadlibrarian < Formula
   homepage "http://www.compuphase.com/electronics/kicadlibranrian_en.htm"
   url "http://www.compuphase.com/software/kicadlibrarian-sources-0.9.5167.tar.gz"
   version "0.9.5167"
-  sha1 "e774da07a069090b2212dbb3fdb0606acc39c8ce"
+  sha1 "2ca6f1d34fb87f75d8765d27629ef1e02606d945"
 
   depends_on "cmake" => :build
   depends_on :x11 # if your formula requires any X11/XQuartz components
