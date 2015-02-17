@@ -15,7 +15,7 @@ class Kicadlibrarian < Formula
   depends_on "libharu"
 
   patch :p1 do
-      url "https://gist.githubusercontent.com/shaneburrell/33577564323246490089/raw/3477164e0d741eb1a88e3207bef066314d90600d/CMAKE.patch"
+      url "https://gist.githubusercontent.com/shaneburrell/6e9f75e682791c6c23ea/raw"
       sha1 "27a90f67fa506e0bf8db75cc09c3700cd0d03163"
   end
 
