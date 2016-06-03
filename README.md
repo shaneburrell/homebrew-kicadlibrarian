@@ -1,6 +1,6 @@
 # Homebrew-kicadlibrarian
 
-Under Development but working!!!
+Updated to the latest version and using metacollin's wx31 and patches.  Sorry this took so long I've been busy.
 
 ## Installation
 
